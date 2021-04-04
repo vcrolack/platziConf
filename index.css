@@ -1,7 +1,13 @@
 .text-platzi {
   color: #97c93e !important;
 }
-
+.btn-platzi {
+  background-color: #97c93e !important;
+  color: white;
+}
+.btn-platzi:hover {
+  background-color: #82ad36 !important;
+}
 #header img {
   width: 80px;
 }
@@ -10,7 +16,6 @@
   object-fit: cover;
   filter: grayscale(70%);
 }
-
 #carousel {
   position: relative;
 }
