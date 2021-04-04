@@ -16,10 +16,10 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-target="#navbar" data-bs-offset="57">
     <!-- HEADER -->
     <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand d-flex" href="#">
             <img src="./assets/images/platzi-logo.png" alt="Platzi logo">
@@ -29,26 +29,26 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
+            data-bs-target="#navbar"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                <a class="nav-link" aria-current="page" href="#main">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#place-time">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-platzi" href="#">Comprar tickets</a>
@@ -78,9 +78,9 @@
               <div class="row alig-items-center">
                 <div class="col-md-6 offset-md-6 text-center text-md-end">
                   <h1>Platzi Conf Hawaii</h1>
-                  <p class="d-none d-md-block">Platzi Conf llega por primera vez a Hawwai! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                  <p class="d-none d-md-block mt-4">Platzi Conf llega por primera vez a Hawwai! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!
                   </p>
-                  <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+                  <a href="#" class="btn btn-outline-light my-4">Quiero ser orador</a>
                   <button type="button" class="btn btn-platzi">Comprar tickets</button>
                 </div>
               </div>
