@@ -51,7 +51,7 @@
                 <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                <a class="nav-link text-platzi" href="#" data-bs-target="#modalCompra" data-bs-toggle="modal">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
                   <p class="d-none d-md-block mt-4">Platzi Conf llega por primera vez a Hawwai! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores de primer nivel que tenemos para ti. Te esperamos!
                   </p>
                   <a href="#" class="btn btn-outline-light my-4">Quiero ser orador</a>
-                  <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                  <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar tickets</button>
                 </div>
               </div>
             </div>
@@ -246,6 +246,43 @@
       </div>
     </footer>
     <!-- /FOOTER -->
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col form-label">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibirás un correo de confirmación para la compra.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL -->
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
